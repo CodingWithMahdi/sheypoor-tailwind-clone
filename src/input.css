@@ -1,0 +1,68 @@
+@tailwind base;
+
+
+@layer base {
+    @font-face {
+        font-family: "vazir";
+        src: url('../fonts/woff2/FD/Vazir-FD.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: "vazir light";
+        src: url('../fonts/woff2/FD/Vazir-Light-FD.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: "vazir bold";
+        src: url('../fonts/woff2/FD/Vazir-Bold-FD.woff2') format('woff2');
+    }
+
+    /* .float-label-input:focus-within label,
+    .float-label-input input:not(:placeholder-shown) ~ label {
+      transform: translateY(-1.5rem) scale(0.85);
+      color: #3e7bfa;
+   } */
+
+   /* input:checked ~ .radio {
+    border: 1px solid #3e7bfa;
+    color: #3e7bfa;
+    background-color:#9dbff9; 
+   } */
+
+   .modal-open{
+    overflow-y: hidden;
+   }
+   
+   [x-cloak] { display: none !important; }
+
+  
+
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities{
+    .scrollbar::-webkit-scrollbar {
+        width: 20px;
+        height: 20px;
+      }
+    
+      .scrollbar::-webkit-scrollbar-track {
+        border-radius: 100vh;
+        background: #f7f4ed;
+      }
+    
+      .scrollbar::-webkit-scrollbar-thumb {
+        background: #9dbff9;
+        border-radius: 100vh;
+        border: 3px solid #f6f7ed;
+      }
+    
+      .scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #9dbff9;
+      }  
+}
+
+
+
